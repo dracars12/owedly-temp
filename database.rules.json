@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "appConfig": {
+      "settlementScanner": {
+        ".read": true
+      }
+    },
+    "settlementCatalog": {
+      "current": {
+        ".read": true
+      }
+    }
+  }
+}

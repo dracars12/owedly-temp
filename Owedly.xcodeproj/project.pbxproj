@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* AppDelegate.swift */; };
+		A10000000000000000000002 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* DesignSystem.swift */; };
+		A10000000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* Models.swift */; };
+		A10000000000000000000004 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* Components.swift */; };
+		A10000000000000000000005 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* SplashViewController.swift */; };
+		A10000000000000000000006 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* IntroViewController.swift */; };
+		A10000000000000000000007 /* OnboardingSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* OnboardingSteps.swift */; };
+		A10000000000000000000008 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* OnboardingViewController.swift */; };
+		A10000000000000000000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* Assets.xcassets */; };
+		A1000000000000000000000A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* LaunchScreen.storyboard */; };
+		A1000000000000000000000B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = I10000000000000000000001 /* SnapKit */; };
+		A1000000000000000000000C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = I10000000000000000000002 /* FirebaseCore */; };
+		A1000000000000000000000D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = I10000000000000000000003 /* FirebaseDatabase */; };
+		A1000000000000000000000E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = I10000000000000000000004 /* FirebaseMessaging */; };
+		A30000000000000000000001 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = I30000000000000000000001 /* Adapty */; };
+		A30000000000000000000002 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = I30000000000000000000002 /* AppsFlyerLib-Static */; };
+		A30000000000000000000003 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = I30000000000000000000003 /* FirebaseAnalytics */; };
+		A10000000000000000000010 /* FirebaseBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000E /* FirebaseBootstrap.swift */; };
+		A10000000000000000000011 /* SettlementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000F /* SettlementService.swift */; };
+		A10000000000000000000012 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000010 /* PurchaseManager.swift */; };
+		A10000000000000000000013 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* NotificationManager.swift */; };
+		A10000000000000000000014 /* IntroStageComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000012 /* IntroStageComponents.swift */; };
+		A10000000000000000000015 /* PreparingMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* PreparingMatchesViewController.swift */; };
+		A10000000000000000000016 /* PayoutInsightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000014 /* PayoutInsightViewController.swift */; };
+		A10000000000000000000017 /* PaywallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000015 /* PaywallViewController.swift */; };
+		A10000000000000000000018 /* PaymentSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* PaymentSuccessViewController.swift */; };
+		A10000000000000000000019 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* NotificationsViewController.swift */; };
+		A1000000000000000000001A /* SettlementWebScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001C /* SettlementWebScanner.swift */; };
+		A1000000000000000000001B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = I10000000000000000000005 /* SwiftSoup */; };
+		A20000000000000000000001 /* LimitedOfferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* LimitedOfferManager.swift */; };
+		A20000000000000000000002 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* MainTabBarController.swift */; };
+		A20000000000000000000003 /* DiscoverComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* DiscoverComponents.swift */; };
+		A20000000000000000000004 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* DiscoverViewController.swift */; };
+		A20000000000000000000005 /* SettlementSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* SettlementSearchViewController.swift */; };
+		A20000000000000000000006 /* LimitedOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000006 /* LimitedOfferViewController.swift */; };
+		A20000000000000000000007 /* SPConfetti in Frameworks */ = {isa = PBXBuildFile; productRef = I20000000000000000000001 /* SPConfetti */; };
+		A20000000000000000000008 /* ClaimTrackingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000007 /* ClaimTrackingStore.swift */; };
+		A20000000000000000000009 /* SettlementDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000008 /* SettlementDetailsViewController.swift */; };
+		A2000000000000000000000A /* MyClaimsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000009 /* MyClaimsViewController.swift */; };
+		A2000000000000000000000B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000A /* SettingsViewController.swift */; };
+		B8A75607303487D500F346E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A75606303487D500F346E8 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* OnboardingSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSteps.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1000000000000000000000A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1000000000000000000000C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B1000000000000000000000D /* Owedly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owedly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000E /* FirebaseBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBootstrap.swift; sourceTree = "<group>"; };
+		B1000000000000000000000F /* SettlementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementService.swift; sourceTree = "<group>"; };
+		B10000000000000000000010 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		B10000000000000000000011 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* IntroStageComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroStageComponents.swift; sourceTree = "<group>"; };
+		B10000000000000000000013 /* PreparingMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingMatchesViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000014 /* PayoutInsightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoutInsightViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000015 /* PaywallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000016 /* PaymentSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000017 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000018 /* Owedly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Owedly.entitlements; sourceTree = "<group>"; };
+		B10000000000000000000019 /* database.rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.rules.json; sourceTree = "<group>"; };
+		B1000000000000000000001A /* firebase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firebase.json; sourceTree = "<group>"; };
+		B1000000000000000000001B /* FIREBASE_SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FIREBASE_SETUP.md; sourceTree = "<group>"; };
+		B1000000000000000000001C /* SettlementWebScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementWebScanner.swift; sourceTree = "<group>"; };
+		B1000000000000000000001D /* SCANNER_SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SCANNER_SETUP.md; sourceTree = "<group>"; };
+		B1000000000000000000001E /* realtime-database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "realtime-database.json"; sourceTree = "<group>"; };
+		B20000000000000000000001 /* LimitedOfferManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedOfferManager.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B20000000000000000000003 /* DiscoverComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverComponents.swift; sourceTree = "<group>"; };
+		B20000000000000000000004 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		B20000000000000000000005 /* SettlementSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementSearchViewController.swift; sourceTree = "<group>"; };
+		B20000000000000000000006 /* LimitedOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedOfferViewController.swift; sourceTree = "<group>"; };
+		B20000000000000000000007 /* ClaimTrackingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimTrackingStore.swift; sourceTree = "<group>"; };
+		B20000000000000000000008 /* SettlementDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementDetailsViewController.swift; sourceTree = "<group>"; };
+		B20000000000000000000009 /* MyClaimsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClaimsViewController.swift; sourceTree = "<group>"; };
+		B2000000000000000000000A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B8A75606303487D500F346E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000B /* SnapKit in Frameworks */,
+				A1000000000000000000000C /* FirebaseCore in Frameworks */,
+				A1000000000000000000000D /* FirebaseDatabase in Frameworks */,
+				A1000000000000000000000E /* FirebaseMessaging in Frameworks */,
+				A30000000000000000000003 /* FirebaseAnalytics in Frameworks */,
+				A30000000000000000000001 /* Adapty in Frameworks */,
+				A30000000000000000000002 /* AppsFlyerLib-Static in Frameworks */,
+				A1000000000000000000001B /* SwiftSoup in Frameworks */,
+				A20000000000000000000007 /* SPConfetti in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000002 /* Owedly */,
+				B1000000000000000000000C /* README.md */,
+				B1000000000000000000001B /* FIREBASE_SETUP.md */,
+				B1000000000000000000001D /* SCANNER_SETUP.md */,
+				B1000000000000000000001E /* realtime-database.json */,
+				B10000000000000000000019 /* database.rules.json */,
+				B1000000000000000000001A /* firebase.json */,
+				C10000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C10000000000000000000002 /* Owedly */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000004 /* App */,
+				C10000000000000000000005 /* Core */,
+				C10000000000000000000006 /* UI */,
+				C10000000000000000000007 /* Screens */,
+				C1000000000000000000000B /* Resources */,
+				B10000000000000000000018 /* Owedly.entitlements */,
+			);
+			path = Owedly;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000D /* Owedly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000002 /* DesignSystem.swift */,
+				B10000000000000000000003 /* Models.swift */,
+				C1000000000000000000000D /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000004 /* Components.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000007 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000008 /* Splash */,
+				C10000000000000000000009 /* Intro */,
+				C1000000000000000000000A /* Onboarding */,
+				C1000000000000000000000E /* IntroStage */,
+				C20000000000000000000001 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000008 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000005 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000009 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000006 /* IntroViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		C1000000000000000000000A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000008 /* OnboardingViewController.swift */,
+				B10000000000000000000007 /* OnboardingSteps.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C1000000000000000000000B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000009 /* Assets.xcassets */,
+				C1000000000000000000000C /* Base.lproj */,
+				B1000000000000000000000B /* Info.plist */,
+				B8A75606303487D500F346E8 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1000000000000000000000C /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000A /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		C1000000000000000000000D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000E /* FirebaseBootstrap.swift */,
+				B1000000000000000000000F /* SettlementService.swift */,
+				B1000000000000000000001C /* SettlementWebScanner.swift */,
+				B10000000000000000000010 /* PurchaseManager.swift */,
+				B10000000000000000000011 /* NotificationManager.swift */,
+				B20000000000000000000001 /* LimitedOfferManager.swift */,
+				B20000000000000000000007 /* ClaimTrackingStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1000000000000000000000E /* IntroStage */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000012 /* IntroStageComponents.swift */,
+				B10000000000000000000013 /* PreparingMatchesViewController.swift */,
+				B10000000000000000000014 /* PayoutInsightViewController.swift */,
+				B10000000000000000000015 /* PaywallViewController.swift */,
+				B10000000000000000000016 /* PaymentSuccessViewController.swift */,
+				B10000000000000000000017 /* NotificationsViewController.swift */,
+			);
+			path = IntroStage;
+			sourceTree = "<group>";
+		};
+		C20000000000000000000001 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000002 /* MainTabBarController.swift */,
+				B20000000000000000000003 /* DiscoverComponents.swift */,
+				B20000000000000000000004 /* DiscoverViewController.swift */,
+				B20000000000000000000005 /* SettlementSearchViewController.swift */,
+				B20000000000000000000006 /* LimitedOfferViewController.swift */,
+				B20000000000000000000008 /* SettlementDetailsViewController.swift */,
+				B20000000000000000000009 /* MyClaimsViewController.swift */,
+				B2000000000000000000000A /* SettingsViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000000000000000000001 /* Owedly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10000000000000000000002 /* Build configuration list for PBXNativeTarget "Owedly" */;
+			buildPhases = (
+				D10000000000000000000002 /* Sources */,
+				D10000000000000000000001 /* Frameworks */,
+				D10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Owedly;
+			packageProductDependencies = (
+				I10000000000000000000001 /* SnapKit */,
+				I10000000000000000000002 /* FirebaseCore */,
+				I10000000000000000000003 /* FirebaseDatabase */,
+				I10000000000000000000004 /* FirebaseMessaging */,
+				I30000000000000000000003 /* FirebaseAnalytics */,
+				I30000000000000000000001 /* Adapty */,
+				I30000000000000000000002 /* AppsFlyerLib-Static */,
+				I10000000000000000000005 /* SwiftSoup */,
+				I20000000000000000000001 /* SPConfetti */,
+			);
+			productName = Owedly;
+			productReference = B1000000000000000000000D /* Owedly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E10000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = G10000000000000000000001 /* Build configuration list for PBXProject "Owedly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C10000000000000000000001;
+			packageReferences = (
+				H10000000000000000000001 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				H10000000000000000000002 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				H10000000000000000000003 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				H20000000000000000000001 /* XCRemoteSwiftPackageReference "SPConfetti" */,
+				H30000000000000000000001 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
+				H30000000000000000000002 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
+			productRefGroup = C10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10000000000000000000001 /* Owedly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000009 /* Assets.xcassets in Resources */,
+				A1000000000000000000000A /* LaunchScreen.storyboard in Resources */,
+				B8A75607303487D500F346E8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* AppDelegate.swift in Sources */,
+				A10000000000000000000002 /* DesignSystem.swift in Sources */,
+				A10000000000000000000003 /* Models.swift in Sources */,
+				A10000000000000000000004 /* Components.swift in Sources */,
+				A10000000000000000000005 /* SplashViewController.swift in Sources */,
+				A10000000000000000000006 /* IntroViewController.swift in Sources */,
+				A10000000000000000000007 /* OnboardingSteps.swift in Sources */,
+				A10000000000000000000008 /* OnboardingViewController.swift in Sources */,
+				A10000000000000000000010 /* FirebaseBootstrap.swift in Sources */,
+				A10000000000000000000011 /* SettlementService.swift in Sources */,
+				A1000000000000000000001A /* SettlementWebScanner.swift in Sources */,
+				A10000000000000000000012 /* PurchaseManager.swift in Sources */,
+				A10000000000000000000013 /* NotificationManager.swift in Sources */,
+				A10000000000000000000014 /* IntroStageComponents.swift in Sources */,
+				A10000000000000000000015 /* PreparingMatchesViewController.swift in Sources */,
+				A10000000000000000000016 /* PayoutInsightViewController.swift in Sources */,
+				A10000000000000000000017 /* PaywallViewController.swift in Sources */,
+				A10000000000000000000018 /* PaymentSuccessViewController.swift in Sources */,
+				A10000000000000000000019 /* NotificationsViewController.swift in Sources */,
+				A20000000000000000000001 /* LimitedOfferManager.swift in Sources */,
+				A20000000000000000000002 /* MainTabBarController.swift in Sources */,
+				A20000000000000000000003 /* DiscoverComponents.swift in Sources */,
+				A20000000000000000000004 /* DiscoverViewController.swift in Sources */,
+				A20000000000000000000005 /* SettlementSearchViewController.swift in Sources */,
+				A20000000000000000000006 /* LimitedOfferViewController.swift in Sources */,
+				A20000000000000000000008 /* ClaimTrackingStore.swift in Sources */,
+				A20000000000000000000009 /* SettlementDetailsViewController.swift in Sources */,
+				A2000000000000000000000A /* MyClaimsViewController.swift in Sources */,
+				A2000000000000000000000B /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		G10000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		G10000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		G10000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Owedly/Owedly.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UV436WYFZ9;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Owedly/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.Owedly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		G10000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Owedly/Owedly.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UV436WYFZ9;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Owedly/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.Owedly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G10000000000000000000001 /* Build configuration list for PBXProject "Owedly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G10000000000000000000011 /* Debug */,
+				G10000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G10000000000000000000002 /* Build configuration list for PBXNativeTarget "Owedly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G10000000000000000000021 /* Debug */,
+				G10000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		H10000000000000000000001 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		H10000000000000000000002 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 11.11.0;
+			};
+		};
+		H10000000000000000000003 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.13.5;
+			};
+		};
+		H20000000000000000000001 /* XCRemoteSwiftPackageReference "SPConfetti" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPConfetti.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.2;
+			};
+		};
+		H30000000000000000000001 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adaptyteam/AdaptySDK-iOS.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
+		H30000000000000000000002 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		I10000000000000000000001 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000001 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		I10000000000000000000002 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000002 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		I10000000000000000000003 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000002 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		I10000000000000000000004 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000002 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		I10000000000000000000005 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000003 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		I20000000000000000000001 /* SPConfetti */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H20000000000000000000001 /* XCRemoteSwiftPackageReference "SPConfetti" */;
+			productName = SPConfetti;
+		};
+		I30000000000000000000001 /* Adapty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H30000000000000000000001 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = Adapty;
+		};
+		I30000000000000000000002 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H30000000000000000000002 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		I30000000000000000000003 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000002 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F10000000000000000000001 /* Project object */;
+}

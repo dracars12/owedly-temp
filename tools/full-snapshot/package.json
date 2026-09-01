@@ -1,0 +1,11 @@
+{
+  "name": "owedly-full-snapshot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "snapshot": "node build-snapshot.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+Owedly iPad compatibility layout pass
+
+- Added responsive compact-height layouts based on the actual controller view/window height.
+- Fixed Intro overlap between description/privacy hint/CTA in short iPadOS compatibility windows.
+- Tightened onboarding chrome and typography only for short windows; question hints and grids no longer force overlapping constraints.
+- Made Companies onboarding grid width responsive instead of fixed at 360 pt.
+- Updated Preparing Matches, Paywall, Payment Success, Notifications, Payout Insight, and Limited Offer for short windows.
+- Preserved the previous <=812 pt small-iPhone behavior on Preparing Matches, Paywall, and Payment Success.
+- Removed layout decisions based on UIScreen.main.bounds.height.
+- Swift syntax parse checked for every .swift file in the project.
+
+Note: Xcode/iOS Simulator is not available in this Linux build environment, so run the final visual pass in Xcode on iPad Air 11-inch (M3), iPadOS 26.6 compatibility mode before App Review submission.

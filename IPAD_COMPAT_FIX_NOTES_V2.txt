@@ -1,0 +1,23 @@
+Owedly iPad compatibility layout fix v2
+2026-08-28
+
+Main correction after testing in iPad Air 11-inch compatibility/windowed mode:
+- Responsive remakes now preserve required self-sizing constraints for reusable views.
+- MatchPreviewCard height is preserved on Intro.
+- LargeSuccessGlyphView 115pt layout frame is preserved on Preparing Matches and Payment Success.
+- Limited Offer preserves timer pill, plan card, and CTA heights.
+- Default Paywall preserves deadline badge, annual/weekly plan card, and CTA heights.
+- Notification preview and primary CTA heights are preserved.
+- Onboarding / Payout Insight / other responsive primary buttons preserve their 56pt height.
+- My Claims uses a more compact header/empty-state layout in short compatibility windows.
+
+Why this mattered:
+SnapKit remakeConstraints removes all SnapKit constraints installed on the remade view,
+including height/size constraints created by reusable components themselves. Without
+re-adding those sizes, the container could collapse while its child content remained
+visible, producing text/icon overlap.
+
+Validation performed here:
+- All Swift sources passed `swiftc -frontend -parse` syntax parsing.
+- Full xcodebuild cannot be run in this Linux environment; run the project in Xcode and
+  re-check the iPad Air 11-inch (M3) / iPadOS 26.6 compatibility window before submission.

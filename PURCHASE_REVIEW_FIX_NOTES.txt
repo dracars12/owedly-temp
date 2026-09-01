@@ -1,0 +1,13 @@
+Owedly purchase review fix
+
+Changed PurchaseManager.swift only for the purchase-flow issue:
+- A confirmed Adapty/StoreKit `.success` is no longer converted into a user-visible "Purchase failed" when the returned Adapty profile has not propagated Premium yet.
+- Premium is unlocked optimistically for the current session after a confirmed transaction.
+- The app retries Adapty profile refresh at 0.25s / 0.5s / 1.0s / 1.5s.
+- Stale inactive profiles cannot immediately revoke the just-completed purchase during that session.
+- Added detailed purchase logs for success, pending, cancellation, actual errors, and delayed entitlement propagation.
+- On the next cold launch, the normal Adapty profile remains authoritative.
+
+Validation:
+- All 29 Swift files passed `swiftc -frontend -parse` syntax validation.
+- Full Xcode/iOS SDK build must still be run locally before upload.
